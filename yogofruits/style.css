@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf7;
+    color: #4b2418;
+}
+
+
+/* MENÚ */
+
+.menu {
+    width: 100%;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #632b1d;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d9283e;
+}
+
+
+/* INICIO */
+
+.inicio {
+    min-height: 650px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        linear-gradient(135deg, #fff5ed, #fffdf8);
+}
+
+.contenido {
+    max-width: 600px;
+}
+
+.pequeno {
+    color: #d9283e;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    display: block;
+    color: #d9283e;
+}
+
+.contenido > p:not(.pequeno) {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #d9283e;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(217,40,62,0.25);
+}
+
+.frutas {
+    font-size: 100px;
+    max-width: 350px;
+    line-height: 1.5;
+}
+
+
+/* PRODUCTOS */
+
+.productos {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.productos-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 300px;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(80,30,10,0.10);
+    padding-bottom: 25px;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+}
+
+.producto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    font-size: 23px;
+    margin: 20px 15px 10px;
+}
+
+.producto p {
+    line-height: 1.6;
+    margin: 0 20px 20px;
+    color: #74584e;
+}
+
+.emoji {
+    font-size: 100px;
+    padding: 50px 0;
+    background: #fff1e8;
+}
+
+.pedido {
+    display: inline-block;
+    text-decoration: none;
+    background: #632b1d;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
+/* NOSOTROS */
+
+.nosotros {
+    padding: 90px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    background: #632b1d;
+    color: white;
+}
+
+.nosotros h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.nosotros p:not(.pequeno) {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.nosotros .pequeno {
+    color: #ffbd59;
+}
+
+.frutas-grandes {
+    font-size: 75px;
+    white-space: nowrap;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.contacto h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    margin-bottom: 30px;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #35170f;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer img {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .frutas {
+        font-size: 60px;
+        margin-top: 35px;
+    }
+
+    .productos {
+        padding: 70px 20px;
+    }
+
+    .productos h2 {
+        font-size: 30px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 25px;
+    }
+
+    .nosotros h2 {
+        font-size: 30px;
+    }
+
+    .frutas-grandes {
+        font-size: 50px;
+    }
+
+}
